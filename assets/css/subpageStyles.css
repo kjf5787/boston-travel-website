@@ -1,0 +1,239 @@
+/* Kayla Fennell, ISTE-240, 2205 */
+
+/*** styles for all subpages ***/
+
+/** whole page styles **/
+.contentContainer {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+/** breadcrumbs styles **/
+
+.breadcrumbs {
+	padding-top: 105px;
+	padding-bottom: 10px;
+	margin-left: 40px;
+}
+
+/** header styles **/
+
+h1 {
+	font-size: 50px;
+	color: #002140;
+	text-align: center;
+}
+
+#subtitle {
+	font-size: 40px;
+	color: #002140;
+	text-align: center;
+}
+
+header img {
+	width: 70%;
+	margin: auto;
+	display: block;
+	padding: 30px 0 30px 0;
+}
+
+/** link styles **/
+
+.aboutSection a, .opinionSection a, .breadcrumbs a {
+	color: #BA658E;
+}
+
+.aboutSection a:hover, .opinionSection a:hover, .breadcrumbs a:hover {
+	color: #4476AC;
+}
+
+/** opinions section styles **/
+.opinionSection {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.opinionSectionText {
+	grid-column: 1 / 2;
+}
+
+.optionSectionImg {
+	grid-column: 2 / 3;
+	align-self: center;
+}
+
+/** yelp styles **/
+
+.yelpRating {
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	bottom: 10px;
+}
+
+.yelpStars {
+	position: relative;
+	bottom: 7px;
+	padding: 0 5px 0 5px;
+}
+
+.yelpLogo {
+	position: relative;
+	bottom: 6px;
+}
+
+.reviewNum {
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	left: 113px;
+	bottom: 5px;
+	font-size: 16px;
+}
+
+/** grading page styles **/
+
+h3 {
+	font-style: italic;
+	font-weight: bold;
+	color: #BA658E;
+	font-size: 22px;
+}
+
+ol {
+	font-size: 20px;
+}
+
+ol li {
+	padding-top: 10px;
+}
+
+/** references styles **/
+
+iframe {
+	margin: 50px auto 30px auto;
+	width: 60vw;
+	height: 600px;
+}
+
+/** responsive styles **/
+
+	/* change section styles and img sizes at 950px */
+@media (max-width: 1050px) {
+	.opinionSection {
+		display: block;
+	}
+
+	.opinionSection #map {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.reviewNum {
+		left: -190px;
+		bottom: -12px;
+	}
+}
+
+	/* change header img size and h1 size at 850px */
+@media (max-width: 850px) {
+	header img {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 46px;
+	}
+}
+
+	/* change nav font size at 600px */
+@media (max-width: 600px) {
+	h1 {
+		font-size: 40px;
+	}
+}
+
+	/* change placement of yelp details at 510px 
+@media (max-width: 510px) {
+	.reviewNum {
+		left: 35px;
+		bottom: 15px;
+	}
+
+	.yelpLogo {
+		left: 20px;
+	}
+}
+*/
+
+	/* change placement of yelp details at 766px */
+@media (max-width: 766px) {
+	.reviewNum {
+		left: 113px;
+		bottom: 5px;
+	}
+}
+
+	/* change placement of yelp details at 510px */
+@media (max-width: 504px) {
+	.reviewNum {
+		left: -78px;
+		bottom: 15px;
+	}
+
+	.yelpLogo {
+		left: 170px;
+		bottom: 10px;
+	}
+}
+
+	/* change nav font size at 500px */
+@media (max-width: 500px) {
+	h1 {
+		font-size: 36px;
+	}
+}
+
+	/* change placement of yelp details at 392px */
+@media (max-width: 392px) {
+	.reviewNum {
+		left: 0px;
+		bottom: 34px;
+	}
+
+	.opinionSection #map {
+		margin-top: 10px;
+	}
+}
+
+	/* change placement of yelp details at 367px */
+@media (max-width: 367px) {
+	.reviewNum {
+		position: initial;
+	}
+
+	.opinionSection #map {
+		position: initial;
+	}
+
+	.yelpStars {
+		position: initial;
+		padding: 10px 10px 10px 0;
+		padding-bottom: 2px;
+	}
+
+	.yelpLogo {
+		position: initial;
+		padding-left: 0;
+	}
+
+	.yelpRating {
+		position: initial;
+	}
+
+	.opinionSection #map {
+		margin-top: 30px;
+	}
+}

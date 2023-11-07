@@ -1,0 +1,155 @@
+/* Kayla Fennell, ISTE-240, 2205 */
+
+/*** styles for index.html ***/
+
+body {
+	width: 100%;
+}
+
+/** hero styles **/
+.heroImage {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-image: url("../images/hero.png");
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+}
+
+.heroText {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	padding-top: 150px;
+}
+
+.heroText h1 {
+	font-size: 6em;
+	color: #002140;
+}
+
+.heroText #subtitle {
+	font-size: 30px;
+	color: #002140;
+	padding: 0 30px 0 30px;
+}
+
+/** content styles **/
+.about, .subpageCards, .slideshowSection {
+	width: 60%;
+	margin: auto;
+}
+
+.about {
+	padding-top: 50px;
+}
+
+/** slideshow styles **/
+
+.slideshowSection {
+	margin-bottom: 60px;
+}
+
+.slideshowSection h3 {
+	font-style: italic;
+	font-weight: bold;
+	color: #BA658E;
+	font-size: 24px;
+	padding: 0 10px 0 10px;
+}
+
+.slideshowBox {
+	width: 60%;
+	margin: auto;
+	margin-top: 40px;
+	text-align: center;
+	padding: 0 15px 35px 15px;
+	border: 1.5px dashed #002140;
+}
+
+#slideImg {
+	padding-bottom: 30px;
+	width: 90%;
+}
+
+.slideshowSection a {
+	background-color: #9E6EAC;
+	width: 100px;
+	margin: 15px auto 15px auto;
+	padding: 15px;
+	color: #002140;
+	text-decoration: none;
+}
+
+.slideshowSection a:hover {
+	background-color: #7A428A;
+	color: #FCF2FF;
+}
+
+.button {
+	font-size: 22px;
+	background-color: #9E6EAC;
+	border: none;
+	padding: 5px;
+	width: 30px;
+	position: relative;
+	top: 2px;
+	z-index: 0;
+}
+
+.button:hover {
+	background-color: #7A428A;
+	color: #FCF2FF;
+}
+
+/** responsive styles **/
+	/* reduce font sizes around 650px */
+@media (max-width: 650px) {
+	.heroText h1 {
+	font-size: 5em;
+	}
+
+	.heroText #subtitle {
+	font-size: 28px;
+	}
+}
+	/* adjust slideshow sizing to fit smaller screen */
+@media (max-width: 600px) {
+	.slideshowBox {
+		width: 80%;
+		margin: auto;
+	}
+
+	.slideshowSection a {
+		padding: 10px;
+	}
+}
+	/* reduce font sizes around 550px */
+@media (max-width: 550px) {
+	.heroText h1 {
+	font-size: 4em;
+	}
+
+	.heroText #subtitle {
+	font-size: 24px;
+	}
+}
+	/* reduce font sizes around 400px */
+@media (max-width: 550px) {
+	.heroText h1 {
+	font-size: 3em;
+	}
+
+	.heroText #subtitle {
+	font-size: 22px;
+	}
+}
+	/* adjust slideshow sizing to fit smaller screen */
+@media (max-width: 400px) {
+	.slideshowBox {
+		width: 95%;
+		margin: auto;
+	}
+}
